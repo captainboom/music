@@ -1,0 +1,12 @@
+<ion-view view-title="{{ artist.name }}">
+    <ion-content>
+        <ion-list>
+            <ion-item class="item-remove-animate item-thumbnail-left item-icon-right" ng-repeat="album in albums" type="item-text-wrap">
+                <img ng-src="{{ album.image }}">
+
+                <h2>{{ album.name }}</h2>
+
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-view>

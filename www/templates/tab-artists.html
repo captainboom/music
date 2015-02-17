@@ -1,0 +1,14 @@
+<ion-view view-title="Artists">
+    <ion-content>
+        <ion-list>
+            <ion-item class="item-remove-animate item-thumbnail-left item-icon-right" ng-repeat="artist in artists" type="item-text-wrap"
+                      href="#/tab/artistDetails/{{ artist.id }}">
+                <img ng-src="{{ artist.image }}">
+
+                <h2>{{ artist.name }}</h2>
+                <i class="icon ion-chevron-right icon-accessory"></i>
+
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-view>
